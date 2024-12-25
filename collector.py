@@ -3,14 +3,25 @@
 # Pulled data: Current stock price, number of splits, dividend rates, company valuation, etc.
 import yfinance as yf
 
-# Create object called stock
-# Stock will have a ticker
-# Traits will be historical data, financials, and actions
-
-# Any or all of the traits can be displayed
-
-# Initialized with a ticker symbol
-
+# Stock object
+class Stock:
+    def __init__(self, sym: str):
+        pass
+     
+    # Method to fetch stock's financials   
+    def financials(self):
+        pass
+    
+    # Method to fetch stock's historical data
+    def historical_data(self):
+        pass
+    
+    # Method to fetch stock's actions like dividends and splits
+    def actions(self):
+        pass
+    
+aapl = Stock("AAPL")
+print(aapl.financials)
     
     
     
