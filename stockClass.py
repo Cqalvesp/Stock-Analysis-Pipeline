@@ -15,7 +15,7 @@ class Stock:
     
     # Method to fetch stock's historical data
     def historical_data(self):
-        return self.ticker.history(period="1mo")
+        return self.ticker.history(period="5d")
     
     # Method to fetch stock's actions like dividends and splits
     def actions(self):
