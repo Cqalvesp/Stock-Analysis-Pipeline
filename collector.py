@@ -5,23 +5,23 @@ import yfinance as yf
 
 # Stock object
 class Stock:
-    def __init__(self, sym: str):
-        pass
+    def __init__(self, symbol: str):
+        self.symbol = symbol
+        self.ticker = yf.Ticker(symbol)
      
     # Method to fetch stock's financials   
     def financials(self):
-        pass
+        return self.ticker.financials
     
     # Method to fetch stock's historical data
     def historical_data(self):
-        pass
+        return self.ticker.history(period="1mo")
     
     # Method to fetch stock's actions like dividends and splits
     def actions(self):
-        pass
-    
-aapl = Stock("AAPL")
-print(aapl.financials)
+        return self.ticker.actions
+   
+
     
     
     
