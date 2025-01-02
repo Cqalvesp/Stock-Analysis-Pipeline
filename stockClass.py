@@ -10,15 +10,15 @@ class Stock:
         self.ticker = yf.Ticker(symbol)
      
     # Method to fetch stock's financials   
-    def financials(self):
+    def get_financials(self):
         return self.ticker.financials
     
     # Method to fetch stock's historical data
-    def historical_data(self):
-        return self.ticker.history(period="5d")
+    def get_history(self):
+        return self.ticker.history(period="1y", interval="1d")
     
     # Method to fetch stock's actions like dividends and splits
-    def actions(self):
+    def get_actions(self):
         return self.ticker.actions
    
 
