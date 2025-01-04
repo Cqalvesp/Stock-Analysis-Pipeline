@@ -1,5 +1,5 @@
 import stockClass
-import cleaner
+import cleaner as cl
 
 # Define stock tickers to track and create ticker object for each
 Stock_List = ["AAPl", "TSLA", "F", "VOO", "INTL", "NVDA", "CMG", "AMZN", "MSFT", "JPM", "PLTR", "GOOGL", "META", "T", "VZ", "GOLD", "COP", "EOG", "CNQ"]
@@ -22,11 +22,9 @@ def fetch_data(stock):
     # Return important stock data
     return history, actions, financials
 
-# Function that uses cleaner module on fetched data to have it preprocessed and transformed
-def transformer(data):
-    pass
-
 # Function to move tranformed data to database
+def data_transfer():
+    pass
 
 # Run functions and print statements
 if __name__ == "__main__":
@@ -36,9 +34,9 @@ if __name__ == "__main__":
         stock_data = fetch_data(item)
         
         print(F"Cleaning and preprocessing {item} data...")
-        stockHist = transformer(stock_data[0])
-        stockActs = transformer(stock_data[1])
-        stockFins = transformer(stock_data[2])
+        stockHist = cl.clean_data(stock_data[0])
+        stockActs = cl.clean_data(stock_data[1])
+        stockFins = cl.clean_data(stock_data[2])
         
         stockHist.to_csv()
         stockActs.to_csv()
