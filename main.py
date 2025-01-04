@@ -31,12 +31,12 @@ if __name__ == "__main__":
     # Terminal prompts for program backend
     for item in Stock_List:
         print(f"fetching {item} data...")
-        stock_data = fetch_data(item)
+        stock_data = fetch_data(Stock_Tickers[item])
         
         print(F"Cleaning and preprocessing {item} data...")
-        stockHist = cl.clean_data(stock_data[0])
-        stockActs = cl.clean_data(stock_data[1])
-        stockFins = cl.clean_data(stock_data[2])
+        stockHist = cl.clean_hist(stock_data[0])
+        stockActs = cl.clean_acts(stock_data[1])
+        stockFins = cl.clean_fins(stock_data[2])
         
         stockHist.to_csv()
         stockActs.to_csv()
