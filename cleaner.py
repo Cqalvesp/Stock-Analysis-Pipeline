@@ -2,14 +2,6 @@
 import numpy as np
 import pandas as pd
 
-# Global List of prefixes for rows to drop
-dropped_rows = ['Tax Effect Of Unusual Items', 'Tax Rate For Calcs', 'Normalized EBITDA', 
-                'Reconciled Depreciation', 'Reconciled Cost Of Revenue', 'Net Interest Income', 'Interest Expense', 
-                'Interest Income', 'Normalized Income', 'Total Operating Income As Reported', 'Diluted Average Shares',
-                'Basic Average Shares', 'Diluted EPS', 'Basic EPS', 'Diluted NI Availto Com Stockholders', 'Net Income Common Stockholders',
-                'Selling General And Administration', 'Interest Income Non Operating', 'Interest Expense Non Operating', 
-                'Net Non Operating Interest Income Expense', 'Other Non Operating Income Expenses']
-
 # Function to preprocess and transform historical data
 def clean_hist(history):
     # Place fetched data into dataframe
