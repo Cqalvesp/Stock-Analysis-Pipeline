@@ -1,9 +1,5 @@
-import stockClass
+import stockClass as stck
 import cleaner as cl
-
-# Define stock tickers to track and create ticker object for each
-Stock_List = ["AAPl", "TSLA", "F", "VOO", "INTL", "NVDA", "CMG", "AMZN", "MSFT", "JPM", "PLTR", "GOOGL", "META", "T", "VZ", "GOLD", "COP", "EOG", "CNQ"]
-Stock_Tickers = {x : stockClass.Stock(x) for x in Stock_List}
 
 # Define global CSV files to write data in and wipe after data is sent to database
 historyFile = 'history.csv'
@@ -29,9 +25,9 @@ def data_transfer():
 # Run functions and print statements
 if __name__ == "__main__":
     # Terminal prompts for program backend
-    for item in Stock_List:
+    for item in stck.Stock_List:
         print(f"fetching {item} data...")
-        stock_data = fetch_data(Stock_Tickers[item])
+        stock_data = fetch_data(stck.Stock_Tickers[item])
         
         print(F"Cleaning and preprocessing {item} data...")
         stockHist = cl.clean_hist(stock_data[0])
@@ -51,6 +47,8 @@ if __name__ == "__main__":
             pass
         with open(financialsFile, 'w', newline='') as financials:
             pass
+        
+    print("The database can now be inspected.")
         
         
         

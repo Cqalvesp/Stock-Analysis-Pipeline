@@ -20,6 +20,11 @@ class Stock:
     # Method to fetch stock's actions like dividends and splits
     def get_actions(self):
         return self.ticker.actions
+    
+# Define stock tickers to track and create ticker object for each
+Stock_List = ["AAPl", "TSLA", "F", "VOO", "INTL", "NVDA", "CMG", "AMZN", "MSFT", 
+              "JPM", "PLTR", "GOOGL", "META", "T", "VZ", "GOLD", "COP", "EOG", "CNQ"]
+Stock_Tickers = {x : Stock(x) for x in Stock_List}
    
 
     
