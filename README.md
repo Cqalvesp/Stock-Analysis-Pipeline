@@ -17,6 +17,10 @@
 # Pipeline runs automatically through the use of aa job scheduler that periodically pulls
 # data from the API and analyzes/visualizes it
 
+# Tech Stack:
+- Programming Languages: Python, SQL
+- Technologies: MySQL, Power BI
+
 
 
 
