@@ -1,5 +1,5 @@
 # Financial-Data-Pipeline
-# Required Libraries: yfinance
+# Required Libraries: yfinance, pandas
 
 # Accesses Yahoo Finance API to pull financial data
 
