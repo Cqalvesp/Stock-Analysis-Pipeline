@@ -8,7 +8,7 @@
 
 # Company Financials(Balance Sheets, Income Statements)
 
-# Market data(Dividends, Stock Splits)
+# Company Actions(Dividends, Stock Splits)
 
 # Transforms and cleans data that has been read to place into a database
 
@@ -18,7 +18,7 @@
 # data from the API and analyzes/visualizes it
 
 # Tech Stack:
-- Programming Languages: Python, SQL
+- Programming Languages: Python(Pandas, Numpy, yfinance), SQL
 - Technologies: MySQL, Power BI
 
 
