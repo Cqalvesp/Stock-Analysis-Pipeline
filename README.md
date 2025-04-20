@@ -34,4 +34,5 @@ The data is loaded into a **MySQL** database, which includes the following table
 2. **Transform**: The extracted data is cleaned and preprocessed using **pandas** and **numpy** to handle missing values, correct data types, and format the data.
 3. **Load**: The processed data is loaded into the **MySQL** database using `pymysql`, with separate tables for historical data, financials, and stock actions.
 4. **Analysis**: The transformed data is analyzed using **R** and documented using **R Markdown**. The analysis includes statistical insights, visualizations, and other relevant metrics.
+5. **View**: Download html file to see how the data is analyzed.
 
