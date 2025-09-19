@@ -9,7 +9,7 @@ This pipeline pulls stock market data from `yfinance`, processes and transforms 
 - **Python**  
   - `pandas` – for data extraction, transformation, and preprocessing
   - `numpy` – for numerical operations
-  - `pymysql` – for connecting to MySQL database
+  - `pymysql` and 'sqlalchemy' – for connecting to MySQL database
 - **R**  
   - **R Markdown** – for performing and documenting analysis
 - **MySQL** – for storing the data
@@ -38,5 +38,5 @@ The data is loaded into a **MySQL** database, which includes the following table
 
 ## **Next Steps**
 1. Build AI model to analyze historical data and company financials to predict stock price
-2. Create custome linear regression model to predict stock trading volume
+
 
