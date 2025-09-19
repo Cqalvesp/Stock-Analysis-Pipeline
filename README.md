@@ -9,7 +9,7 @@ This pipeline pulls stock market data from `yfinance`, processes and transforms 
 - **Python**  
   - `pandas` – for data extraction, transformation, and preprocessing
   - `numpy` – for numerical operations
-  - `pymysql` and 'sqlalchemy' – for connecting to MySQL database
+  - `pymysql` and `sqlalchemy` – for connecting to MySQL database
 - **R**  
   - **R Markdown** – for performing and documenting analysis
 - **MySQL** – for storing the data
