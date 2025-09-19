@@ -13,7 +13,7 @@ This pipeline pulls stock market data from `yfinance`, processes and transforms 
 - **R**  
   - **R Markdown** – for performing and documenting analysis
 - **MySQL** – for storing the data
-- **yfinance** – for extracting stock market data
+- **yfinance** – extracting stock market data from yahoo finance
 
 ## **Data Sources**
 - Data is pulled from **Yahoo Finance** using the `yfinance` Python library. The pipeline extracts financial data such as stock prices, historical data, and corporate actions like dividends and splits.
@@ -35,4 +35,8 @@ The data is loaded into a **MySQL** database, which includes the following table
 3. **Load**: The processed data is loaded into the **MySQL** database using `pymysql`, with separate tables for historical data, financials, and stock actions.
 4. **Analysis**: The transformed data is analyzed using **R** and documented using **R Markdown**. The analysis includes statistical insights, visualizations, and other relevant metrics.
 5. **View**: Download html file to see how the data is analyzed.
+
+## **Next Steps**
+1. Build AI model to analyze historical data and company financials to predict stock price
+2. Create custome linear regression model to predict stock trading volume
 

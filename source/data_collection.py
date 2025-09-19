@@ -4,7 +4,7 @@ import numpy as np
 import yfinance as yf
 
 # Custom Modules
-import cleaner as cl
+import data_cleaning as cl
 from db_connection import get_connection
 
 # Define stock tickers to track and create ticker object for each
