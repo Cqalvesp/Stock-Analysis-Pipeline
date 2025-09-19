@@ -38,5 +38,7 @@ The data is loaded into a **MySQL** database, which includes the following table
 
 ## **Next Steps**
 1. Build AI model to analyze historical data and company financials to predict stock price
+2. Docker for containerization
+3. AWS for database hosting and model deployment
 
 
